@@ -123,7 +123,7 @@ static const char *colorname[] = {
  * foreground, background, cursor
  */
 unsigned int defaultfg = 15;
-unsigned int defaultbg = 237;
+unsigned int defaultbg = 236;
 static unsigned int defaultcs = 15;
 static unsigned int defaultrcs = 257;
 
@@ -185,6 +185,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Up,          zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Down,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_0,           zoomreset,      {.f =  0} },
+	{ TERMMOD,              XK_P,           clippaste,      {.i =  0} },
 };
 
 /*
