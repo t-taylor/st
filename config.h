@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:pixelsize=12:antialias=true:autohint=true";
+static char *font = "monospace:pixelsize=20:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -107,25 +107,22 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  /* 8 normal colors */
-  [0] = "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-  [1] = "#ea6962", /* red     */
-  [2] = "#a9b665", /* green   */
-  [3] = "#d8a657", /* yellow  */
-  [4] = "#7daea3", /* blue    */
-  [5] = "#d3869b", /* magenta */
-  [6] = "#89b482", /* cyan    */
-  [7] = "#d4be98", /* white   */
-
-  /* 8 bright colors */
-  [8]  = "#928374", /* black   */
-  [9]  = "#ef938e", /* red     */
-  [10] = "#bbc585", /* green   */
-  [11] = "#e1bb7e", /* yellow  */
-  [12] = "#9dc2ba", /* blue    */
-  [13] = "#e1acbb", /* magenta */
-  [14] = "#a7c7a2", /* cyan    */
-  [15] = "#e2d3ba", /* white   */
+  "#282c34", /* 0: black */
+  "#e06c75", /* 1: red */
+  "#98c379", /* 2: green */
+  "#d19a66", /* 3: yellow */
+  "#61afef", /* 4: blue */
+  "#c678dd", /* 5: magenta */
+  "#56b6c2", /* 6: cyan */
+  "#abb2bf", /* 7: white */
+  "#5c6370", /* 8: brblack */
+  "#e06c75", /* 9: brred */
+  "#98c379", /* 10: brgreen */
+  "#d19a66", /* 11: bryellow */
+  "#61afef", /* 12: brblue */
+  "#c678dd", /* 13: brmagenta */
+  "#56b6c2", /* 14: brcyan */
+  "#ffffff", /* 15: brwhite */
 };
 
 /*
